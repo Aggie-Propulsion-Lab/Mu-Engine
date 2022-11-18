@@ -1,0 +1,103 @@
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+import time
+import os
+
+PATH = "C:\Program Files (x86)\chomedriver.exe"
+driver = webdriver.Chrome(PATH)
+driver.get("https://webbook.nist.gov/chemistry/name-ser/")
+
+
+# navigates to fluid properties and selects units and conditions. 
+def fluid_properties(Name, Temperature="K", Pressure="psia", Density="kg/m3", Energy="kJ/kg", Velocity="m/s", Viscosity="uPa*s", Surface="N/m", Type="IsoTherm"):
+    # Units selection is as follows:
+    # Temperature:      K       C       F           R
+    # Pressure:         MPa     bar     atm         torr            psia  
+    # Density:          mol/l   mol/m3  g/ml        kg/m3           lb-mole/ft3     lbm/ft3
+    # Energy:           kJ/mol  kJ/kg   kcal/mol    Btu/lb-mole     kcal/g          Btu/lbm
+    # Velocity:         m/s     ft/s    mph 
+    # Viscosity         uPa*s   Pa*s    cP          lbm/ft*s 
+    # surface tension:  N/m     dyn/cm  lb/ft       lb/in
+
+    # Data type selection has the following options:
+    # IsoTherm  IsoBar  IsoChor    SatP    SatT
+
+    # navigates to website
+
+    # finds search bar for name
+    search = driver.find_element(By.ID, "Name")
+
+    # seraches the user inputed chemical name:
+    search.send_keys(Name) 
+    search.send_keys(Keys.RETURN)
+    
+    # locating fluid properties and clicking that link
+    link = driver.find_element(By.LINK_TEXT, "Fluid Properties")
+    link.click()
+    
+    # selecting units
+    var_list = [Temperature, Pressure, Density, Energy, Velocity, Viscosity, Surface]
+    for variable in var_list:
+        driver.find_element(By.CSS_SELECTOR, "input[value='{}']".format(variable)).click()
+
+    # Select type of data output
+    driver.find_element(By.CSS_SELECTOR, "input[value='{}']".format(Type)).click()
+
+    # Submit
+    driver.find_element(By.CSS_SELECTOR, "input[type='submit']").click()
+
+# inputs data range for Isochoric assumption and downloads output as txt file
+def Isochor(Density, t_low, t_high, t_inc=1, filepath="/"):
+
+    # input density
+    Dense = driver.find_element(By.CSS_SELECTOR, "input[name='D']")
+    Dense.clear()
+    Dense.send_keys(str(Density))
+
+    # input t_low, t_high, and t_increment, and clicks submits results (by clicking enter)
+    low = driver.find_element(By.CSS_SELECTOR, "input[name='TLow']")
+    low.clear()
+    low.send_keys(str(t_low))
+    high = driver.find_element(By.CSS_SELECTOR, "input[name='THigh']")
+    high.clear()
+    high.send_keys(str(t_high))
+    inc = driver.find_element(By.CSS_SELECTOR, "input[name='TInc']")
+    inc.clear()
+    inc.send_keys(str(t_inc), Keys.RETURN)
+
+    # clicks on download data and locates the data 
+    driver.find_element(By.LINK_TEXT ,"Download data").click()
+    data = driver.find_element(By.TAG_NAME, "pre")
+    # print(data.text)
+    
+    # saves data to txt file
+    filename = str(Density) + ".txt"
+    f = open(os.path.join(filepath , filename), "w+")
+    f.write(data.text)
+    f.close()
+
+# takes inputs
+def vapak_data_script(chemical, d_low, d_high, d_inc, tl, th, ti=1, filepath="/", Temperature="K", Pressure="psia", Density="kg/m3", Energy="kJ/kg", Velocity="m/s", Viscosity="uPa*s", Surface="N/m"):
+
+    fluid_properties(chemical, Temperature, Pressure, Density, Energy, Velocity, Viscosity, Surface, Type="IsoChor")
+    print(1)
+    for density in range(d_low, d_high, d_inc):
+        Isochor(density, tl, th, ti, filepath)
+        driver.back()
+        driver.back()
+
+    
+
+# fluid_properties("Propane", Temperature="C", Type="IsoChor")
+
+# Isochor(15,-25, 50, 1, filepath="vapak_calcs/Propane_test")
+
+vapak_data_script("Propane", 735, 1000, 5, -200, 300, 1, filepath="vapak_calcs/Propane_test", Temperature="C")     
+
+
+# do not include powers 
+time.sleep(10)
+
+driver.quit()

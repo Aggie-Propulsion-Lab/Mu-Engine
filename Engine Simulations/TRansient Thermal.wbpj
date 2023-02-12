@@ -2,10 +2,10 @@
 <Storage>
   <Project Version="9.1">
     <base-designpoint-name valType="String">0</base-designpoint-name>
-    <timestamp-max valType="Int64">42267</timestamp-max>
-    <framework-build-version valType="String">22.2.192.0</framework-build-version>
-    <external-version-string valType="String">2022 R2</external-version-string>
-    <last-saved-utc valType="String">02/08/2023 21:32:52</last-saved-utc>
+    <timestamp-max valType="Int64">42367</timestamp-max>
+    <framework-build-version valType="String">23.1.153.0</framework-build-version>
+    <external-version-string valType="String">2023 R1</external-version-string>
+    <last-saved-utc valType="String">02/12/2023 07:15:17</last-saved-utc>
     <managed-categories valType="String">[report, misc, progress]</managed-categories>
     <logHistory valType="StringArray">
       <ArrayEntry Index="0">Junjie Qin@LAPTOP-S46HLN0G:C:\Users\Junjie Qin\AppData\Local\Temp\WorkbenchLogs\CoreEvents22684.log</ArrayEntry>
@@ -21,6 +21,7 @@
       <ArrayEntry Index="10">Junjie Qin@LAPTOP-S46HLN0G:C:\Users\Junjie Qin\AppData\Local\Temp\WorkbenchLogs\CoreEvents17424.log</ArrayEntry>
       <ArrayEntry Index="11">Junjie Qin@LAPTOP-S46HLN0G:C:\Users\Junjie Qin\AppData\Local\Temp\WorkbenchLogs\CoreEvents21140.log</ArrayEntry>
       <ArrayEntry Index="12">Junjie Qin@LAPTOP-S46HLN0G:C:\Users\Junjie Qin\AppData\Local\Temp\WorkbenchLogs\CoreEvents2092.log</ArrayEntry>
+      <ArrayEntry Index="13">junji@YOSHI:C:\Users\junji\AppData\Local\Temp\WorkbenchLogs\CoreEvents23756.log</ArrayEntry>
     </logHistory>
     <expression-scope-container valType="String">Parameters</expression-scope-container>
     <project-type valType="String">WB2</project-type>
@@ -159,8 +160,8 @@
     <Addin Name="Ansys.Units.Commands.Addin" Version="7.1" />
     <Addin Name="Ansys.ACT.WorkBench.Addin" Version="4.2">
       <ExtensionsLoaded valType="StringArray">
-        <ArrayEntry Index="0">1;LSDYNA;5f463412-bd3e-484b-87e7-cbc0a665e474;LSDYNA;wbex;2022;2</ArrayEntry>
-        <ArrayEntry Index="1">1;ANSYSMotion;20180725-3f81-49eb-9f31-41364844c769;ANSYSMotion;wbex;2022;2</ArrayEntry>
+        <ArrayEntry Index="0">1;LSDYNA;5f463412-bd3e-484b-87e7-cbc0a665e474;LSDYNA;wbex;2023;1</ArrayEntry>
+        <ArrayEntry Index="1">1;ANSYSMotion;20180725-3f81-49eb-9f31-41364844c769;ANSYSMotion;wbex;2023;1</ArrayEntry>
       </ExtensionsLoaded>
     </Addin>
     <Addin Name="Ansys.Dpdb.DpdbAddin" Version="4.2">
@@ -192,7 +193,7 @@
       <Object Name="/FileContainer/FileReference:F3" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F3</object-name>
-        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$b723cd95-cbd5-472b-9a51-1917aab81b55, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 191}</member-data>
+        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$b723cd95-cbd5-472b-9a51-1917aab81b55, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 193}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F4" Version="1.0">
         <class-type valType="String">FileReference</class-type>
@@ -450,7 +451,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 42067, "Input": 1780, "Output": 1780}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 42361, "Input": 1780, "Output": 1780}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
     </Container>

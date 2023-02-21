@@ -1,0 +1,35 @@
+# encoding: utf-8
+# 2022 R2
+SetScriptVersion(Version="22.2.192")
+system1 = GetSystem(Name="SYS")
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.CreateMaterial(Name="Isomolded Graphite")
+matl1.SetColor(
+    Red=42,
+    Green=53,
+    Blue=53)
+matl1.SetSuppression(Suppressed=True)
+matl1.SetSuppression(Suppressed=False)
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+matlProp1 = material1.GetProperty(Name="Thermal Conductivity")
+matlProp1.SetVariableProperty(
+    VariableName="Thermal Conductivity",
+    Property="Unit",
+    Value="W m^-1 K^-1")
+matlProp1.SetData(
+    Variables=["Thermal Conductivity"],
+    Values=[["60.5 [W m^-1 K^-1]"]])
+matlProp1.SetVariableProperty(
+    VariableName="Thermal Conductivity",
+    Property="Unit",
+    Value="W m^-1 C^-1")
+matlProp1.SetData(
+    Variables=["Thermal Conductivity"],
+    Values=[["60.5 [W m^-1 C^-1]"]])
+matl1.Delete()
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)

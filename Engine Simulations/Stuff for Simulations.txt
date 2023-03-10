@@ -1,1 +1,0 @@
-Extract the Ansys zip file to access the simulation

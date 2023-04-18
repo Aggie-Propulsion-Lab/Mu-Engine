@@ -1,0 +1,86 @@
+                                                                                
+ADS NASTRAN VERSION 17.1.2.33   21:51  04/12/23                                 
+                                                                                
+MAXIMUM TET ELEMENT ASPECT RATIO            =  13.12 ON ELEMENT 1722            
+                                                                                
+MAXIMUM TET ELEMENT FACE SKEW ANGLE      =  85.79 DEGREES ON ELEMENT 1612       
+                                                                                
+TOTAL MASS = 4.907672E-02                                                       
+                                                                                
+MAXIMUM STIFFNESS MATRIX DIAGONAL =  1.5649E+12  AT GRID 19318  COMPONENT 2     
+MINIMUM STIFFNESS MATRIX DIAGONAL =  0.0000E+00  AT GRID 127281 COMPONENT 6     
+                                                                                
+MAXIMUM SINGLE POINT CONSTRAINT FORCE MAGNITUDE  =  4.325166E+02  AT GRID 19439 
+MAXIMUM SINGLE POINT CONSTRAINT MOMENT MAGNITUDE =  1.287189E+00  AT GRID 20877 
+                                                                                
+MAXIMUM DISPLACEMENT MAGNITUDE =  7.998735E-04  AT GRID 86386                   
+MAXIMUM DISPLACEMENT MAGNITUDE =  2.347969E-03  AT GRID 74697                   
+MAXIMUM DISPLACEMENT MAGNITUDE =  2.838480E-01  AT GRID 74709                   
+MAXIMUM DISPLACEMENT MAGNITUDE =  4.483289E-03  AT GRID 74708                   
+MAXIMUM DISPLACEMENT MAGNITUDE =  3.009995E-03  AT GRID 86431                   
+MAXIMUM DISPLACEMENT MAGNITUDE =  3.082530E-03  AT GRID 75041                   
+MAXIMUM DISPLACEMENT MAGNITUDE =  3.066885E-03  AT GRID 75041                   
+MAXIMUM DISPLACEMENT MAGNITUDE =  3.094544E-03  AT GRID 74427                   
+MAXIMUM DISPLACEMENT MAGNITUDE =  3.257511E-03  AT GRID 74427                   
+MAXIMUM DISPLACEMENT MAGNITUDE =  3.842721E-03  AT GRID 76188                   
+MAXIMUM DISPLACEMENT MAGNITUDE =  4.013572E-03  AT GRID 76400                   
+MAXIMUM DISPLACEMENT MAGNITUDE =  4.142949E-03  AT GRID 76188                   
+MAXIMUM DISPLACEMENT MAGNITUDE =  4.353026E-03  AT GRID 88118                   
+MAXIMUM DISPLACEMENT MAGNITUDE =  4.385086E-03  AT GRID 88118                   
+MAXIMUM DISPLACEMENT MAGNITUDE =  4.398366E-03  AT GRID 88118                   
+MAXIMUM DISPLACEMENT MAGNITUDE =  4.425274E-03  AT GRID 104140                  
+MAXIMUM DISPLACEMENT MAGNITUDE =  4.546314E-03  AT GRID 104140                  
+MAXIMUM DISPLACEMENT MAGNITUDE =  4.560817E-03  AT GRID 104140                  
+MAXIMUM DISPLACEMENT MAGNITUDE =  4.563569E-03  AT GRID 104140                  
+MAXIMUM DISPLACEMENT MAGNITUDE =  4.566707E-03  AT GRID 104140                  
+MAXIMUM DISPLACEMENT MAGNITUDE =  4.566705E-03  AT GRID 104140                  
+MAXIMUM DISPLACEMENT MAGNITUDE =  4.566705E-03  AT GRID 104140                  
+MAXIMUM DISPLACEMENT MAGNITUDE =  4.566705E-03  AT GRID 104140                  
+MAXIMUM ROTATION MAGNITUDE     =  5.463592E-04  AT GRID 1521                    
+MAXIMUM ROTATION MAGNITUDE     =  2.075869E-04  AT GRID 6720                    
+MAXIMUM ROTATION MAGNITUDE     =  3.516215E-04  AT GRID 6720                    
+MAXIMUM ROTATION MAGNITUDE     =  3.223585E-04  AT GRID 7599                    
+MAXIMUM ROTATION MAGNITUDE     =  3.916722E-04  AT GRID 6698                    
+MAXIMUM ROTATION MAGNITUDE     =  4.491941E-04  AT GRID 6698                    
+MAXIMUM ROTATION MAGNITUDE     =  4.986353E-04  AT GRID 6698                    
+MAXIMUM ROTATION MAGNITUDE     =  6.330054E-04  AT GRID 6742                    
+MAXIMUM ROTATION MAGNITUDE     =  6.946844E-04  AT GRID 6731                    
+MAXIMUM ROTATION MAGNITUDE     =  7.592266E-04  AT GRID 6725                    
+MAXIMUM ROTATION MAGNITUDE     =  7.906876E-04  AT GRID 6720                    
+MAXIMUM ROTATION MAGNITUDE     =  8.044829E-04  AT GRID 7599                    
+MAXIMUM ROTATION MAGNITUDE     =  8.180396E-04  AT GRID 6725                    
+MAXIMUM ROTATION MAGNITUDE     =  8.248691E-04  AT GRID 6698                    
+MAXIMUM ROTATION MAGNITUDE     =  8.286443E-04  AT GRID 6698                    
+MAXIMUM ROTATION MAGNITUDE     =  8.203533E-04  AT GRID 6720                    
+MAXIMUM ROTATION MAGNITUDE     =  8.229648E-04  AT GRID 6720                    
+MAXIMUM ROTATION MAGNITUDE     =  8.221774E-04  AT GRID 6720                    
+MAXIMUM ROTATION MAGNITUDE     =  8.219533E-04  AT GRID 6720                    
+MAXIMUM ROTATION MAGNITUDE     =  8.216765E-04  AT GRID 6720                    
+MAXIMUM ROTATION MAGNITUDE     =  8.216762E-04  AT GRID 6720                    
+MAXIMUM ROTATION MAGNITUDE     =  8.216762E-04  AT GRID 6720                    
+MAXIMUM ROTATION MAGNITUDE     =  8.216762E-04  AT GRID 6720                    
+                                                                                
+EPSILON       =  1.007166E-09                                                   
+TOPTTDMAXEPSILON = 5.000000E-01                                                 
+STRAIN ENERGY =  7.678865E+01                                                   
+                                                                                
+MAXIMUM BAR ELEMENT TOTAL STRESS     =  1.645219E+03  AT ELEMENT 75723          
+MAXIMUM BAR ELEMENT VON MISES STRESS =  2.395317E+03  AT ELEMENT 75595          
+MINIMUM BAR ELEMENT TOTAL STRESS     = -2.326080E+03  AT ELEMENT 75595          
+                                                                                
+MAXIMUM BEAM ELEMENT TOTAL STRESS     =  8.984699E+03  AT ELEMENT 75557         
+MAXIMUM BEAM ELEMENT VON MISES STRESS =  8.989532E+03  AT ELEMENT 75557         
+MINIMUM BEAM ELEMENT TOTAL STRESS     = -2.825387E+03  AT ELEMENT 75682         
+                                                                                
+MAXIMUM TET ELEMENT PRINCIPAL STRESS =  4.328270E+04  AT ELEMENT 50329          
+MAXIMUM TET ELEMENT SHEAR STRESS     =  2.637080E+04  AT ELEMENT 52907          
+MAXIMUM TET ELEMENT VON MISES STRESS =  4.689718E+04  AT ELEMENT 55106          
+MINIMUM TET ELEMENT PRINCIPAL STRESS = -2.674279E+04  AT ELEMENT 47002          
+                                                                                
+SOLID ELEMENT RELATIVE STRESS ERROR =  1.976925E-01                             
+                                                                                
+MAXIMUM SOLID ELEMENT NORMALIZED STRESS ERROR =  1.976925E-01  AT GRID 87966    
+MINIMUM SOLID ELEMENT NORMALIZED STRESS ERROR =  0.000000E+00  AT GRID 127030   
+                                                                                
+TOTAL CPU TIME = 129.05 SECONDS                                                 
+WALLCLOCK TIME = 316.90 SECONDS                                                 
